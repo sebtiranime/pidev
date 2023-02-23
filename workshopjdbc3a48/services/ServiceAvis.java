@@ -5,10 +5,10 @@
  */
 package edu.workshopjdbc3a48.services;
 
-
-import edu.workshopjdbc3a48.entities.Categorie;
+import edu.workshopjdbc3a48.entities.Avis;
 import edu.workshopjdbc3a48.utils.DataSource;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -20,18 +20,18 @@ import java.util.List;
  *
  * @author pc
  */
-public class ServiceCategorie implements IService<Categorie>{
+public class ServiceAvis implements IService<Avis>{
  Connection cnx= DataSource.getInstance().getCnx();
 
     @Override
-    public void ajouter(Categorie c) {
+    public void ajouter(Avis a) {
      try {
-            String req = "INSERT INTO `catégorie`(`nom`, `description`) VALUES (?,?)";
+            String req = "INSERT INTO `avis`(`note`, `date_creation`,`commentaire`) VALUES (?,CURRENT_TIMESTAMP(),?)";
             PreparedStatement ps = cnx.prepareStatement(req);
-           ps.setString(1, c.getNom());
-            ps.setString(2, c.getDescription());
+           ps.setString(1, a.getNote());
+            ps.setString(2, a.getCommentaire());
              ps.executeUpdate();
-            System.out.println("catégorie ajoutée !");
+            System.out.println("avis ajoutée !");
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         } 
@@ -39,65 +39,69 @@ public class ServiceCategorie implements IService<Categorie>{
 
     @Override
     public void supprimer(int id) {
-        try {
-            String req = "DELETE FROM `catégorie` WHERE `id_categorie` = ?" ;
+      try {
+            String req = "DELETE FROM `avis` WHERE `id_avis`= ?" ;
           PreparedStatement ps = cnx.prepareStatement(req);
             ps.setInt(1, id);
            ps.executeUpdate();
-            System.out.println("catégorie supprimée !");
+            System.out.println("avis supprimé !");
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-        }
-    }
-        
+        }}
 
     @Override
-    public void modifier(Categorie c) {
+    public void modifier(Avis a) {
      try {
-            String req = "UPDATE `annonce` SET `titre`=?,`description`=?,`date_publication`=?,`statut`=? WHERE `id_annonce`=" + c.getId_categorie();
+            String req = "UPDATE `avis` SET `note`=?,`commentaire`=? WHERE `id_avis`=" + a.getId_avis();
             PreparedStatement ps = cnx.prepareStatement(req);
-           ps.setString(1, c.getNom());
-            ps.setString(2, c.getDescription());
+           ps.setString(1, a.getNote());
+            ps.setString(2, a.getCommentaire());
             ps.executeUpdate();
-            System.out.println("categorie modifiée !");
+            System.out.println("avis modifié !");
              } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-        }  
-    }
+        }  }
 
     @Override
-    public List<Categorie> getAll() {
-        List<Categorie> list = new ArrayList<>();
+    public List<Avis> getAll() {
+      List<Avis> list = new ArrayList<>();
         try {
-            String req = "SELECT * FROM `catégorie`";
+            String req = "SELECT * FROM `avis`";
             Statement st = cnx.createStatement();
             ResultSet rs = st.executeQuery(req);
             while (rs.next()) {
-               Categorie c = new Categorie(rs.getInt(1), rs.getString(2),rs.getString(3));
-                list.add(c);
+               Avis a = new Avis(rs.getInt(1),rs.getString(2),rs.getDate(3),rs.getString(4));
+                list.add(a);
              }
             }
         catch (SQLException ex) {
             System.out.println(ex.getMessage());
         }
-        return list;
-    }
+         for(int i=0;i<list.size();i++)
+       
+       {
+           System.out.println(list.get(i));
+       }
+        return list;}
+
     @Override
-    public Categorie getOneById(int id) {
-    Categorie c =null;
+    public Avis getOneById(int id) {
+     Avis a =new Avis();
         try {
-            String req = "SELECT * FROM `catégorie` WHERE `id_categorie`=?" ;
+            String req = "SELECT * FROM `avis` WHERE `id_avis` = " + id ;
             PreparedStatement ps = cnx.prepareStatement(req);
-            ps.setInt(1,id);
+            //ps.setInt(1,id);
             ResultSet rs = ps.executeQuery(req);
             if (rs.next()) {
-                 c = new Categorie(rs.getInt(1), rs.getString(2), rs.getString(3));
+                 a = new Avis(rs.getInt(1),rs.getString(2),rs.getDate(3),rs.getString(4));
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         }
-         return c; 
-    }  
-    }
-    
+         return a; 
+    } }
+
+  
+  
+  
 

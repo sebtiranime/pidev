@@ -5,62 +5,49 @@
  */
 package edu.workshopjdbc3a48.entities;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 /**
  *
  * @author pc
  */
 public class Favoris {
-  	int id_favoris,id_annonce,id_article,id_user;
+  	private int id_favoris;
+        private Date date_ajout;
+        
+        private User user;
+        private ArrayList<Annonce> annonce;
 
-    public Favoris(int id_favoris, int id_annonce, int id_article, int id_user) {
+    public Favoris(int id_favoris, Date date_ajout) {
         this.id_favoris = id_favoris;
-        this.id_annonce = id_annonce;
-        this.id_article = id_article;
-        this.id_user = id_user;
+        this.date_ajout = date_ajout;
     }
 
-    public Favoris(int id_annonce, int id_article, int id_user) {
-        this.id_annonce = id_annonce;
-        this.id_article = id_article;
-        this.id_user = id_user;
+    public Favoris(Date date_ajout) {
+        this.date_ajout = date_ajout;
     }
+
+    public Favoris() {
+    }
+    
 
     public int getId_favoris() {
         return id_favoris;
     }
 
-    public int getId_annonce() {
-        return id_annonce;
-    }
-
-    public int getId_article() {
-        return id_article;
-    }
-
-    public int getId_user() {
-        return id_user;
-    }
-
-    public void setId_annonce(int id_annonce) {
-        this.id_annonce = id_annonce;
-    }
-
-    public void setId_article(int id_article) {
-        this.id_article = id_article;
-    }
-
-    public void setId_user(int id_user) {
-        this.id_user = id_user;
+    public Date getDate_ajout() {
+        return date_ajout;
     }
 
     @Override
     public String toString() {
-        return "Favoris{" + "id_favoris=" + id_favoris + ", id_annonce=" + id_annonce + ", id_article=" + id_article + ", id_user=" + id_user + '}';
+        return "Favoris{" + "id_favoris=" + id_favoris + ", date_ajout=" + date_ajout + '}';
     }
 
     @Override
     public int hashCode() {
-        int hash = 3;
+        int hash = 7;
         return hash;
     }
 
@@ -81,5 +68,9 @@ public class Favoris {
         }
         return true;
     }
+        
+
+   
+
         
 }

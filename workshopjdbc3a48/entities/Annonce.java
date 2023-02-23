@@ -5,29 +5,53 @@
  */
 package edu.workshopjdbc3a48.entities;
 
+import java.util.Date;
+
+
+
+
+
 /**
  *
  * @author pc
  */
 public class Annonce {
     private int id_annonce;
-    private String titre, description, date_publication, statut;
-
-    public Annonce(int id_annonce, String titre, String description, String date_publication, String statut) {
+    private String titre, description,statut;
+    private Date date_publication;
+    
+    private Article acticle;
+    private User user;
+            
+    public Annonce(int id_annonce, String titre, String description, String statut, Date date_publication) {
         this.id_annonce = id_annonce;
         this.titre = titre;
         this.description = description;
+        this.statut = statut;
         this.date_publication = date_publication;
+    }
+
+    public Annonce(String titre, String description, String statut) {
+        this.titre = titre;
+        this.description = description;
         this.statut = statut;
     }
 
+    public Annonce(String titre, String description) {
+        this.titre = titre;
+        this.description = description;
+    }
     
-    public Annonce(String titre, String description, String date_publication, String statut) {
+
+    
+    public Annonce(String titre, String description, Date date_publication, String statut) {
         this.titre = titre;
         this.description = description;
         this.date_publication = date_publication;
         this.statut = statut;
     }
+
+    public Annonce() { }
 
     public int getId_annonce() {
         return id_annonce;
@@ -41,12 +65,12 @@ public class Annonce {
         return description;
     }
 
-    public String getDate_publication() {
-        return date_publication;
-    }
-
     public String getStatut() {
         return statut;
+    }
+
+    public Date getDate_publication() {
+        return date_publication;
     }
 
     public void setTitre(String titre) {
@@ -57,17 +81,13 @@ public class Annonce {
         this.description = description;
     }
 
-    public void setDate_publication(String date_publication) {
-        this.date_publication = date_publication;
-    }
-
     public void setStatut(String statut) {
         this.statut = statut;
     }
 
     @Override
     public String toString() {
-        return "annonce{" + "id_annonce=" + id_annonce + ", titre=" + titre + ", description=" + description + ", date_publication=" + date_publication + ", statut=" + statut + '}';
+        return "Annonce{" + "id_annonce=" + id_annonce + ", titre=" + titre + ", description=" + description + ", statut=" + statut + ", date_publication=" + date_publication + '}';
     }
 
     @Override
@@ -93,7 +113,11 @@ public class Annonce {
         }
         return true;
     }
+
+   
+
     
+
     
     
 }
