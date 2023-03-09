@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceEchange.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/tests/testFavoris.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/Annonce.fxml</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Admin.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceRecmalation.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/FavorisController.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Categorie.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceAdmin.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/Favoris.fxml</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceSous_categorie.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/AvisController.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/AcceuilController.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/testFXAnnonce.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Evaluation.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceCategorie.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceUser.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceProfil.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceAnnonce.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceArticle.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/Acceuil.fxml</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceEvaluation.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/utils/DataSource.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Chat.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/DetailAnnonceController.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Profil.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Compte.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/Avis.fxml</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Sous_categorie.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Annonce.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceAvis.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Favoris.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/tests/testAvis.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceCompte.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/detailAnnonce.fxml</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceChat.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/AnnonceController.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/IService.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Reclamation.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/User.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/services/ServiceFavoris.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/testFXAvis.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/tests/testAnnoce.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/EmailSender.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Avis.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Echange.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/entities/Article.java</file>
+            <file>file:/C:/Users/pc/Downloads/workshopJDBC3A48/src/edu/workshopjdbc3a48/gui/testFXAcceuil.java</file>
+        </group>
+    </open-files>
+</project-private>

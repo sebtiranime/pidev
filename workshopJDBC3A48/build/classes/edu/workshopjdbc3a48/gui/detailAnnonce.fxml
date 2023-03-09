@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="edu.workshopjdbc3a48.gui.DetailAnnonceController">
+   <children>
+      <Label layoutX="103.0" layoutY="72.0" text="titre" />
+      <Label layoutX="103.0" layoutY="165.0" text="description" />
+      <Label layoutX="99.0" layoutY="308.0" text="statut" />
+      <TextField fx:id="tftitre" layoutX="238.0" layoutY="68.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextArea fx:id="tadescription" layoutX="238.0" layoutY="117.0" prefHeight="148.0" prefWidth="213.0" />
+      <TextField fx:id="tfstatut" layoutX="238.0" layoutY="304.0" prefHeight="25.0" prefWidth="213.0" />
+   </children>
+</AnchorPane>
